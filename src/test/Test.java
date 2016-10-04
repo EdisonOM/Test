@@ -5,6 +5,8 @@
  */
 package test;
 
+import java.io.Console;
+
 /**
  *
  * @author student
@@ -16,6 +18,13 @@ public class Test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    Console console = System.console();
+String s = console.readLine();
+int i = Integer.parseInt(console.readLine());
+for (x)
+        // TODO code application logic here
     }
+    }
+    
     
 }
