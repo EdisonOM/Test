@@ -6,6 +6,7 @@
 package test;
 
 import java.io.Console;
+import java.util.Scanner;
 
 /**
  *
@@ -17,13 +18,9 @@ public class Test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    Console console = System.console();
-String s = console.readLine();
-int i = Integer.parseInt(console.readLine());
-for (x)
-        // TODO code application logic here
-    }
+    Scanner reader = new Scanner(System.in);  // Reading from System.in
+System.out.println("Enter a number: ");
+int n = reader.nextInt(); // Scans the next token of the input as an int.
     }
     
     
