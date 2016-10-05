@@ -47,9 +47,7 @@ if(n>0){
     
     
 }
-Scanner read = new Scanner(System.in);  // Reading from System.in
-System.out.println("Enter a number: ");
-int p = read.nextInt();
+MathFunctions.SquareRootAndAddThree();
 
     }
 
