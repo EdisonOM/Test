@@ -32,8 +32,12 @@ public class MathFunctions extends Test {
         }
         System.out.println(j);
         if (p > 1000) {
-
-        } else if (p > 0) {
+//                for (MathFunctions y:result){
+//                int count = 0;
+//                y += count;
+                
+                
+        } else if (p >= 0) {
             result.add(new result(j));
             
         }
