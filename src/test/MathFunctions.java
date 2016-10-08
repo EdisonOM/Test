@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author SomeDude
+ * @author SomeDude(Edison)
  */
 public class MathFunctions extends Test {
 
