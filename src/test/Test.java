@@ -5,7 +5,6 @@
  */
 package test;
 
-
 import java.util.Scanner;
 
 /**
@@ -46,8 +45,13 @@ public class Test {
             }
 
         }
-        MathFunctions.SquareRootAndAddThree();
+        Scanner read = new Scanner(System.in);  // Reading from System.in
+        System.out.println("Enter a number: ");
+        int p = read.nextInt();
+        if (p >= 0) {
+            MathFunctions.SquareRootAndAddThree(p);
+
+        }
 
     }
-
 }

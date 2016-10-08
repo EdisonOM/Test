@@ -15,11 +15,8 @@ import java.util.Scanner;
  */
 public class MathFunctions extends Test {
 
-    public static void SquareRootAndAddThree() {
-        List<MathFunctions> result = new ArrayList(100);
-        Scanner read = new Scanner(System.in);  // Reading from System.in
-        System.out.println("Enter a number: ");
-        int p = read.nextInt();
+    public static void SquareRootAndAddThree(int p) {
+        List<MathFunctions> result = new ArrayList();
         double rag = Math.sqrt(p);
         boolean done = false;
         double j = rag;
@@ -30,19 +27,16 @@ public class MathFunctions extends Test {
             }
 
         }
-        System.out.println(j);
-        if (p >= 0) {
+        result.add(new result(j));
+
 //                for (MathFunctions y:result){
 //                int count = 0;
 //                y += count;
-            result.add(new result(j));
-
-        } 
         if (j > 1000) {
 
             double sum = 0;
             for (int i = 0; i < result.size(); i++) {
-                System.out.println("The sum is"+sum);
+                System.out.println("The sum is " + sum);
             }
 
         }

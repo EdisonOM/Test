@@ -12,7 +12,7 @@ package test;
 class result extends MathFunctions {
 
     public result(double j) {
-        
+
     }
-    
+
 }
