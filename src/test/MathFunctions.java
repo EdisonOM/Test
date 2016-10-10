@@ -13,9 +13,9 @@ import java.util.Scanner;
  *
  * @author SomeDude(Edison)
  */
-public class MathFunctions extends Test {
+public class MathFunctions  {
 
-    public static void SquareRootAndAddThree(int p) {
+    public static int SquareRootAndAddThree(int p) {
         List<MathFunctions> result = new ArrayList();
         double rag = Math.sqrt(p);
         boolean done = false;
@@ -36,6 +36,7 @@ public class MathFunctions extends Test {
 
             double sum = 0;
             for (int i = 0; i < result.size(); i++) {
+                sum = sum + result.get(i);
                 System.out.println("The sum is " + sum);
             }
 
