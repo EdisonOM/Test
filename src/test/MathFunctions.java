@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class MathFunctions  {
 
     public static int SquareRootAndAddThree(int p) {
-        List<MathFunctions> result = new ArrayList();
+        List<Double> result = new ArrayList();
         double rag = Math.sqrt(p);
         boolean done = false;
         double j = rag;
@@ -27,7 +27,7 @@ public class MathFunctions  {
             }
 
         }
-        result.add(new result(j));
+        result.add(j);
 
 //                for (MathFunctions y:result){
 //                int count = 0;
