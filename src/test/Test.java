@@ -5,6 +5,8 @@
  */
 package test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -48,16 +50,27 @@ public class Test {
         Scanner read = new Scanner(System.in);  // Reading from System.in
         System.out.println("Enter a number: ");
         int p = read.nextInt();
-        double returnValue = 0;
+        int returnValue;
+        int sum=0;
+        List<Integer> theList= new ArrayList();
         if (p >= 0) {
-            returnValue = MathFunctions.SquareRootAndAddThree(p);
-
+            returnValue = (int)MathFunctions.SquareRootAndAddThree(p);
+            theList.add(returnValue);
         }
- if (returnValue > 1000) {
-
-            double sum = 0;
-            for (int i = 0; i < result.size(); i++) {
-                sum = sum + result.get(i);
-                System.out.println("The sum is " + sum);
+        for(int you:theList){
+        sum=sum+you;
+        
+        }
+        System.out.println("The sum is "+ sum);
     }
 }
+// if (returnValue > 1000) {
+//
+//            double sum = 0;
+//            for (int i = 0; i < result.size(); i++) {
+//                sum = sum + result.get(i);
+//                System.out.println("The sum is " + sum);
+//    }
+//            
+//            if 
+//}
