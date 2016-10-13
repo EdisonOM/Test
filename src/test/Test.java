@@ -5,9 +5,11 @@
  */
 package test;
 
+import java.awt.BorderLayout;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -78,8 +80,13 @@ public class Test {
                 choices[1]);
         System.out.println("The color of the Circle is " + circleColor);
         System.out.println("Area of Circle = " + circleArea);
-        
-              
+            
+           
+             JFrame frame = new JFrame("CIRCLE");
+             frame.getContentPane().add(new Display(circleColor, (int) radius),BorderLayout.CENTER);
+             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+             frame.setSize(300,300);
+             frame.setVisible(true);
     }
 }
 // if (returnValue > 1000) {

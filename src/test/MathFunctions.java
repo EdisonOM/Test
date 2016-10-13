@@ -23,14 +23,15 @@ public class MathFunctions  {
     
     public static double AreaOfCircle(double radius){
         double circleArea;
-        int c = 0;
+        
         circleArea = Math.PI * radius * radius;
-        if (c < 0){
-            return -1;
+        if (radius < 0){
+            System.out.println("-1");
         }
+//        double negative = circleArea -= 2*circleArea;
         if (circleArea < 0){
             
-           String error = JOptionPane.showInputDialog("Enter radius again:");
+           String error = JOptionPane.showInputDialog("ERROR! Enter radius again:");
            int rad = Integer.parseInt(error);
         }
         return circleArea;
