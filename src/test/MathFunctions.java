@@ -5,6 +5,8 @@
  */
 package test;
 
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -17,7 +19,22 @@ public class MathFunctions  {
         double x = Math.sqrt(p) + 3;
         
         return x;
-        
-        
+        }
+    
+    public static double AreaOfCircle(double radius){
+        double circleArea;
+        int c = 0;
+        circleArea = Math.PI * radius * radius;
+        if (c < 0){
+            return -1;
+        }
+        if (circleArea < 0){
+            
+           String error = JOptionPane.showInputDialog("Enter radius again:");
+           int rad = Integer.parseInt(error);
+        }
+        return circleArea;
+               
+    
     }
 }

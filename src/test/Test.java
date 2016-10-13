@@ -8,6 +8,7 @@ package test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -62,6 +63,23 @@ public class Test {
         
         }
         System.out.println("The sum is "+ sum);
+        
+        
+        double circleArea;
+        String radiusEntry = JOptionPane.showInputDialog("Enter Radius:");
+        int radius = Integer.parseInt(radiusEntry);
+        circleArea = (double)MathFunctions.AreaOfCircle(radius);
+        
+        String[] choices = {"Red", "Blue", "Green"};
+        String circleColor = (String) JOptionPane.showInputDialog(null, "What's the "
+                + "color of the circle?", "Color", JOptionPane.QUESTION_MESSAGE,
+                null, 
+                choices, 
+                choices[1]);
+        System.out.println("The color of the Circle is " + circleColor);
+        System.out.println("Area of Circle = " + circleArea);
+        
+              
     }
 }
 // if (returnValue > 1000) {
