@@ -54,39 +54,37 @@ public class Test {
         System.out.println("Enter a number: ");
         int p = read.nextInt();
         int returnValue;
-        int sum=0;
-        List<Integer> theList= new ArrayList();
+        int sum = 0;
+        List<Integer> theList = new ArrayList();
         if (p >= 0) {
-            returnValue = (int)MathFunctions.SquareRootAndAddThree(p);
+            returnValue = (int) MathFunctions.SquareRootAndAddThree(p);
             theList.add(returnValue);
         }
-        for(int you:theList){
-        sum=sum+you;
-        
+        for (int you : theList) {
+            sum = sum + you;
         }
-        System.out.println("The sum is "+ sum);
-        
-        
+        System.out.println("The sum is " + sum);
+
         double circleArea;
         String radiusEntry = JOptionPane.showInputDialog("Enter Radius:");
         int radius = Integer.parseInt(radiusEntry);
-        circleArea = (double)MathFunctions.AreaOfCircle(radius);
-        
+        circleArea = (double) MathFunctions.AreaOfCircle(radius);
+
         String[] choices = {"Red", "Blue", "Green"};
         String circleColor = (String) JOptionPane.showInputDialog(null, "What's the "
                 + "color of the circle?", "Color", JOptionPane.QUESTION_MESSAGE,
-                null, 
-                choices, 
+                null,
+                choices,
                 choices[1]);
         System.out.println("The color of the Circle is " + circleColor);
         System.out.println("Area of Circle = " + circleArea);
-            
-           
-             JFrame frame = new JFrame("CIRCLE");
-             frame.getContentPane().add(new Display(circleColor, (int) radius),BorderLayout.CENTER);
-             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-             frame.setSize(300,300);
-             frame.setVisible(true);
+
+        JFrame frame = new JFrame("CIRCLE"); //JFrame created called frame
+        frame.getContentPane().add(new Display(circleColor, (int) radius), BorderLayout.CENTER);
+        //returns the JPanel to place circle to display in JFrame
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //makes option for close button
+        frame.setSize(600,600); //sets the size of the frame
+        frame.setVisible(true); //makes frame visible
     }
 }
 // if (returnValue > 1000) {
@@ -96,6 +94,4 @@ public class Test {
 //                sum = sum + result.get(i);
 //                System.out.println("The sum is " + sum);
 //    }
-//            
-//            if 
 //}
